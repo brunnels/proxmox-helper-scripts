@@ -19,9 +19,9 @@ EOF
 header_info
 echo -e "Loading..."
 APP="Wolf"
-var_disk="4"
-var_cpu="2"
-var_ram="2048"
+var_disk="32"
+var_cpu="8"
+var_ram="8192"
 var_os="debian"
 var_version="12"
 variables
@@ -66,3 +66,5 @@ start
 build_container
 
 msg_ok "Completed Successfully!\n"
+echo -e "${APP} should be reachable by going to the following URL.
+         ${BL}http://${IP}:5001${CL} \n"
